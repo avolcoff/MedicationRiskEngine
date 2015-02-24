@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 3, 2015 2:54:33 PM by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="com.medsalert.riskengine.dao.Anomalyresult" table="anomalyresult" catalog="gigmed">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID" />
+            <generator class="identity" />
+        </id>
+        <property name="datasetId" type="string">
+            <column name="datasetId" length="65535" />
+        </property>
+        <property name="riskScore" type="java.lang.Double">
+            <column name="riskScore" precision="22" scale="0" />
+        </property>
+        <property name="keyCombination" type="string">
+            <column name="keyCombination" length="65535" />
+        </property>
+        <property name="diagnosis1" type="string">
+            <column name="diagnosis1" length="65535" />
+        </property>
+        <property name="diagnosis2" type="string">
+            <column name="diagnosis2" length="65535" />
+        </property>
+        <property name="diagnosis3" type="string">
+            <column name="diagnosis3" length="65535" />
+        </property>
+        <property name="drugName" type="string">
+            <column name="drugName" length="65535" />
+        </property>
+        <property name="keyFrequency" type="java.lang.Long">
+            <column name="keyFrequency" />
+        </property>
+        <property name="diagnosis1frequency" type="java.lang.Long">
+            <column name="diagnosis1Frequency" />
+        </property>
+        <property name="diagnosis2frequency" type="java.lang.Long">
+            <column name="diagnosis2Frequency" />
+        </property>
+        <property name="diagnosis3frequency" type="java.lang.Long">
+            <column name="diagnosis3Frequency" />
+        </property>
+        <property name="drugFrequency" type="java.lang.Long">
+            <column name="drugFrequency" />
+        </property>
+        <property name="reason" type="string">
+            <column name="reason" length="65535" />
+        </property>
+        <property name="icd9description" type="string">
+            <column name="icd9Description" length="65535" />
+        </property>
+        <property name="drugNameDescription" type="string">
+            <column name="drugNameDescription" length="65535" />
+        </property>
+        <property name="recommendedDrugAlternative" type="string">
+            <column name="recommendedDrugAlternative" length="65535" />
+        </property>
+    </class>
+</hibernate-mapping>

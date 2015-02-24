@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 3, 2015 2:54:33 PM by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="com.medsalert.riskengine.dao.Diagnosticvsdrugfrequency" table="diagnosticvsdrugfrequency" catalog="gigmed">
+        <id name="hashkey" type="string">
+            <column name="hashkey" length="500" />
+            <generator class="assigned" />
+        </id>
+        <property name="value" type="java.lang.Long">
+            <column name="value" />
+        </property>
+        <property name="datasetId" type="string">
+            <column name="datasetId" length="65535" />
+        </property>
+    </class>
+</hibernate-mapping>

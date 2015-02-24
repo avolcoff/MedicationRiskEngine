@@ -1,0 +1,44 @@
+<html>
+<body>
+upload:
+<form action="rest/upload" method="POST" enctype="multipart/form-data">
+ 	   <p>
+<!--  	   Data Set Name: <input type="text" name="datasetID" value="a.csv"> -->
+<!--  	   <br> -->
+		<input type="file" name="file" size="45" />
+	   </p>
+ 
+	   <input type="submit" value="Upload It" />
+	</form>
+</form>
+<br><br>
+<hr>
+getPrescriptionRisk:
+<p>
+<form action="rest/getPrescriptionRisk" method="POST">
+Data Set name (same one you used during upload): <input type="text" name="datasetID" value="a.csv">
+<br>
+Diagnosis code (ICD 9): <input type="text" name="diagnosisCode" value="123">
+<br>
+Drug Name: <input type="text" name="drugName" value="abc">
+<br>
+</p>
+<input type="submit" value="Submit">
+<br><br>
+<!-- <hr> -->
+<!-- <form action="rest/insertRecord" method="POST"> -->
+<!-- Data Set name (same one you used during upload) -->
+<!-- <input type="text" name="datasetID" value="webFormTest"> -->
+<!-- <br> -->
+<!-- Diagnosis code (ICD 9) :<br> -->
+<!-- <input type="text" name="diagnosisCode" value="123"> -->
+<!-- <br> -->
+<!-- Drug Name<br> -->
+<!-- <input type="text" name="drugName" value="abc"> -->
+<!-- <br> -->
+<!-- Return Anomaly?<br> -->
+<!-- <input type="text" name="returnIsAnomaly" value="true"> -->
+<!-- <br> -->
+<!-- <input type="submit" value="Submit"> -->
+</body>
+</html>
